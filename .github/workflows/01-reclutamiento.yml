@@ -11,3 +11,14 @@ jobs:
         run: echo "Hola, soy lex luthor, y estoy aquí para reclutar agentes para mi organización secreta. Si estás interesado en unirte 
              a nosotros, por favor envía tu solicitud a través de nuestro formulario de reclutamiento en línea. 
              ¡Esperamos contar contigo!"
+
+      - name: reporte de identidad 
+        run: echo "reporte de identidad"
+             echo "---------------------"
+             echo ""
+             echo "nombre clave: ${{ github.actor }}"
+             echo ""
+             echo "repo: ${{ github.repository }}"
+             echo "operación: ${{ github.sha }}"
+             echo "metadata: ${{ toJSON(github) }}"
+             
