@@ -1,0 +1,13 @@
+name: 01-reclutamiento de agente
+
+on: push
+
+jobs
+  reporte-de-reclutamiento:
+    runs-on: ubuntu-latest
+
+    steps: 
+      - name: el agente se presenta 
+        run: echo "Hola, soy lex luthor, y estoy aquí para reclutar agentes para mi organización secreta. Si estás interesado en unirte 
+             a nosotros, por favor envía tu solicitud a través de nuestro formulario de reclutamiento en línea. 
+             ¡Esperamos contar contigo!"
