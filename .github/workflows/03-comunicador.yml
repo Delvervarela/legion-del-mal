@@ -35,5 +35,11 @@ jobs:
 
   
     steps:
-      - uses: actions/checkout@v4
-
+      
+      - name: Imprimir inputs
+        run: |
+          echo "Inputs: "
+          echo ""
+          echo "villanos: ${{inputs.villano }}"
+          echo "mensaje: ${{inputs.mensaje }}"
+          echo "Nivel: ${{inputs.prioridad }}"
