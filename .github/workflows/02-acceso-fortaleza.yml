@@ -1,6 +1,8 @@
 name: Acceso a la fortaleza 
 
-on: push
+on: 
+  workflow_dispatch:
+
 
 jobs:
   acceso-a-la-base:
@@ -15,6 +17,22 @@ jobs:
                 ls -la
                 echo ""
                 echo "Error - pero que paso? no hay nada"
+
+        - name: 'Braniac debloque la boveda'
+          uses: actions/checkout@v4
+
+        - name: 'Ahora si, vamos a ver los planes'
+          run: |
+                echo "Ahora si, vamos a ver los planes"
+                ls -la
+                echo "Funciona!!"
+                echo ""
+                echo "planes"
+                ls planes/
+                echo "villanos"
+                ls villanos/
+                echo "inteligencia"
+                ls inteligencia/
 
 
             
