@@ -9,13 +9,13 @@ jobs:
     steps:
         - name: El agente llega a la fortaleza 
           run: |
-                echo "Agente ${GITHUB_ACTOR} ha llegado a la fortaleza."
+                echo "Agente ${{github.actor}} ha llegado a la fortaleza."
                 echo ""
                 echo "Buscar los archivos de la legion"
                 ls -la
                 echo ""
                 echo "Error - pero que paso? no hay nada"
-                
+
 
             
         
