@@ -78,11 +78,11 @@ echo "━━━━━━━━━━━━━━━━━━━━━━━━�
 echo "📋 Verificando fichas de villanos..."
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 
-if ls villanos/*.yml 1>/dev/null 2>&1; then
-  for ficha in villanos/*.yml; do
+if ls villanos/*.md 1>/dev/null 2>&1; then
+  for ficha in villanos/*.md; do
     NOMBRE=$(grep "^nombre:" "$ficha" | head -1 | sed 's/nombre: *//;s/"//g')
     if [ -z "$NOMBRE" ]; then
-      NOMBRE=$(basename "$ficha" .yml)
+      NOMBRE=$(basename "$ficha" .md)
     fi
 
     if ! grep -q "estado: activo" "$ficha"; then
