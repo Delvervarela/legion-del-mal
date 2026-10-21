@@ -16,6 +16,19 @@ on:
           - joker
           - harley quinn
 
+      mensaje:
+        description: "Mensaje para el consejo de villanos"
+        required: true
+        default: "la mision fue un exito" 
+
+      prioridad:
+        description: "Nivel de prioridad"
+        required: true
+        type: choice
+        options:
+          - alta
+          - media
+          - baja 
 jobs:
   transmitir-mensaje:
     runs-on: ubuntu-latest
