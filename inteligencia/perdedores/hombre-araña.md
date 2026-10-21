@@ -24,3 +24,9 @@
 1. Las de raimi
 2. las de tom holland
 3. las de amazing spiderman
+
+## Estrategia recomendada
+
+1. etc
+2. etc
+3. etc
