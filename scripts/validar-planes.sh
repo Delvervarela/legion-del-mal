@@ -82,7 +82,7 @@ if ls villanos/*.md 1>/dev/null 2>&1; then
   for ficha in villanos/*.md; do
     NOMBRE=$(grep "^nombre:" "$ficha" | head -1 | sed 's/nombre: *//;s/"//g')
     if [ -z "$NOMBRE" ]; then
-      NOMBRE=$(basename "$ficha" .md)
+      NOMBRE=$(basename "$ficha" .yml)
     fi
 
     if ! grep -q "estado: activo" "$ficha"; then
