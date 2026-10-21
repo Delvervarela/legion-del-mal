@@ -13,7 +13,7 @@ jobs:
              ¡Esperamos contar contigo!"
 
       - name: Reporte de identidad 
-        run: 
+        run: |
           echo "reporte de identidad"
           echo "---------------------"
           echo ""
